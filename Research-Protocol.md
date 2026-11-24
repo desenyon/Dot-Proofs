@@ -1,0 +1,11 @@
+# Research and verification protocol
+
+GitHub is the canonical record. Develop on `research`; use `main` for rigorously reviewed work. The initial `main` bootstrap files predate this policy and are explicitly labeled as drafts, not settlements. Keep IDs stable; do not rewrite branch history.
+
+Before investing in a new entry, identify the exact target by source, statement number where available, hypotheses, conclusion and quantifiers. Search primary literature and catalogue variants, including later preprints and resolved variants. Use a permanent ID, retain source-version and prior-resolution audit, and distinguish a full settlement from a consequence, auxiliary lemma, conditional result or finite check. Never treat another project's catalogue or standing assumptions as proof. Significance may guide extra work; it must not override the fair stage queue.
+
+A possible settlement package contains exact source theorem, comparison to Lean statement, written proof, pinned Lean and library versions, clean kernel replay, transitive axiom report, reproduction commands, review notes, and hashes. Reject sorryAx, custom premises granting the result, native-computation axioms, and circular dependencies. Record any allowed foundational axioms explicitly; standard Lean axioms are not a claim of theorem provability in another theory. Independent review should seek missing cases and implication-direction errors. Promote a settlement only after both evidence and identity are audited. Independence requires both directions relative to explicit theories and consistency assumptions.
+
+## Continuous execution requirements
+
+A genuinely continuous research program needs an always-on host and a supervised process that can acquire another research step immediately after checkpointing. Use one writer, bounded per-job time and memory, durable idempotency keys for (stage, entry, action), atomic cursor transitions, and a separate queue for timed-out certificate checks. Record worker heartbeats and observed halts; no heartbeat means no assurance of execution. Reconcile with the current branch head before publishing. Keep credentials in the host's secret store, out of Git. A proof worker is not a replacement for literature and mathematical reasoning. No hourly or other scheduled substitute is authorized. No continuous worker has been deployed.
